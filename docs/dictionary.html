@@ -11,7 +11,7 @@
 
 <meta name="author" content="Joschka Schwarz" />
 
-<meta name="date" content="2020-06-15" />
+<meta name="date" content="2020-08-13" />
 
 <title>Dictionary</title>
 
@@ -406,7 +406,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Dictionary</h1>
 <h4 class="author">Joschka Schwarz</h4>
-<h4 class="date">2020-06-15</h4>
+<h4 class="date">2020-08-13</h4>
 
 </div>
 
@@ -424,19 +424,21 @@ div.tocify {
 <li><code>?function_name</code> This function provides information about how particular pieces of syntax work.</li>
 </ol>
 <pre class="r"><code>?list.files</code></pre>
+<pre><code>## starting httpd help server ... done</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li><code>list.files()</code> This function lists all the names of each file in a given R project.</li>
 </ol>
 <pre class="r"><code>list.files()</code></pre>
 <pre><code>##  [1] &quot;_site.yml&quot;                 &quot;data_wrangling.html&quot;      
-##  [3] &quot;data_wrangling.Rmd&quot;        &quot;dictionary.Rmd&quot;           
-##  [5] &quot;docs&quot;                      &quot;ggplot_graphs.Rmd&quot;        
-##  [7] &quot;images&quot;                    &quot;index.Rmd&quot;                
-##  [9] &quot;journal_cache&quot;             &quot;journal_files&quot;            
-## [11] &quot;journal.Rmd&quot;               &quot;lab_journal_website.Rproj&quot;
-## [13] &quot;links.Rmd&quot;                 &quot;machine_learning.Rmd&quot;     
-## [15] &quot;README.md&quot;                 &quot;site_libs&quot;                
-## [17] &quot;style.css&quot;                 &quot;testfile.rds&quot;</code></pre>
+##  [3] &quot;data_wrangling.Rmd&quot;        &quot;dictionary.html&quot;          
+##  [5] &quot;dictionary.Rmd&quot;            &quot;dictionary_files&quot;         
+##  [7] &quot;docs&quot;                      &quot;ggplot_graphs.Rmd&quot;        
+##  [9] &quot;images&quot;                    &quot;index.Rmd&quot;                
+## [11] &quot;journal.Rmd&quot;               &quot;journal_files&quot;            
+## [13] &quot;lab_journal_website.Rproj&quot; &quot;links.Rmd&quot;                
+## [15] &quot;machine_learning.Rmd&quot;      &quot;README.md&quot;                
+## [17] &quot;site_libs&quot;                 &quot;style.css&quot;                
+## [19] &quot;testfile.rds&quot;</code></pre>
 <p>…</p>
 <hr />
 </div>
@@ -494,8 +496,6 @@ df</code></pre>
 </ol>
 <pre class="r"><code>col_C  &lt;- c(TRUE, FALSE, FALSE, TRUE)
 df_new &lt;- rbind(df, col_C)</code></pre>
-<pre><code>## Warning in `[&lt;-.factor`(`*tmp*`, ri, value = FALSE): invalid factor level, NA
-## generated</code></pre>
 </div>
 <div id="slicing-and-extracting-data-indexing-vectors" class="section level2">
 <h2><span class="header-section-number">1.4</span> Slicing and extracting data indexing vectors</h2>
@@ -600,19 +600,19 @@ plot(x)</code></pre>
 <h2><span class="header-section-number">1.14</span> Distributions</h2>
 <p>rnorm() This function inserts a normal distribution.</p>
 <pre class="r"><code>rnorm(100, mean = 50, sd=2)</code></pre>
-<pre><code>##   [1] 53.60180 53.82160 51.28182 52.16004 49.21557 45.86711 48.04301 49.26599
-##   [9] 49.18406 47.03106 51.34081 51.25063 49.50617 47.49870 50.67426 48.71800
-##  [17] 48.83063 53.43981 50.92244 48.76792 47.76789 51.15613 49.60354 46.61661
-##  [25] 49.03180 48.54577 46.71730 53.07750 51.36456 52.46412 51.34934 52.11305
-##  [33] 50.71025 50.33237 51.50870 51.31102 51.68068 48.53228 49.23290 50.77318
-##  [41] 48.29871 47.70570 51.65960 48.42539 51.85052 51.38392 50.33263 46.69005
-##  [49] 48.99431 48.47159 49.73792 50.45342 49.16057 50.23682 48.92481 47.49996
-##  [57] 50.37251 53.09274 47.26904 52.01589 48.92810 47.77027 51.21524 48.84225
-##  [65] 45.31989 51.08402 46.99535 47.69306 48.71812 50.66630 49.17569 50.00153
-##  [73] 52.48018 49.78574 50.25993 50.23075 50.80664 48.44780 47.89669 48.31461
-##  [81] 52.34741 51.62290 49.21648 49.00518 46.57177 50.43814 46.13397 52.69903
-##  [89] 50.98591 51.86887 52.41555 49.96453 46.25805 55.34728 49.41420 47.50719
-##  [97] 51.63510 45.90328 49.94012 50.15856</code></pre>
+<pre><code>##   [1] 48.55097 45.86228 50.97707 54.39001 53.08215 47.17945 50.30735 52.10403
+##   [9] 48.36860 52.62561 49.21037 45.51062 50.91770 50.83884 53.39327 52.04328
+##  [17] 49.21625 52.74634 48.22860 48.38881 47.22737 50.53940 48.88238 48.18216
+##  [25] 51.17360 45.94837 49.38826 51.90137 50.39148 51.73596 52.53775 47.78544
+##  [33] 52.46579 49.22853 46.36444 50.25055 49.71454 50.23373 46.83030 52.84720
+##  [41] 46.61883 48.27390 52.91545 49.31058 50.67406 49.66700 52.88844 47.56045
+##  [49] 50.34319 50.10182 52.01484 51.02291 46.20231 50.01524 50.41985 51.44523
+##  [57] 47.38718 49.37703 50.44618 49.20880 49.43185 47.06628 50.37973 50.64562
+##  [65] 50.38611 47.44529 51.46553 50.17556 46.99550 53.72360 48.97997 52.43295
+##  [73] 49.45295 50.18191 49.79490 49.30784 50.43185 53.27820 50.13208 52.13176
+##  [81] 50.17676 49.06635 47.90803 46.71062 53.07517 50.81822 49.30043 49.28828
+##  [89] 47.98140 48.98164 49.43522 52.25936 49.99754 48.97821 48.75814 49.79224
+##  [97] 50.00905 52.23968 52.39027 49.94198</code></pre>
 </div>
 </div>
 
@@ -671,7 +671,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
