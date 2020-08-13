@@ -11,7 +11,7 @@ To explore the basic data manipulation verbs of dplyr, we’ll use nycflights13:
 
 ```{r, message=FALSE}
 if (!require(nycflights13)) {
-  install.packages("nycflights13")
+  install.packages("nycflights13",repos = "https://cran.rstudio.com/")
   library(nycflights13)
 }
 library(dplyr)
